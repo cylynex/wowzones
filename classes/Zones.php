@@ -12,8 +12,9 @@ class Zones extends Database {
 			$response[]=$zoneData;
 		}
 				
-		header('Content-Type: application/json');
+		//header('Content-Type: application/json');
 		echo json_encode($response);		
+		return $response;
 		
 	}
 	
@@ -49,6 +50,20 @@ class Zones extends Database {
 	}
 	
 	
+	// Get the continent names raw
+	function GetContinentNames() {
+		$result = $this->Query("SELECT DISTINCT zoneContinent FROM zones ORDER BY zoneContinent ASC");
+		while ($continentData = mysqli_fetch_array($result)) {
+			$response[] = $continentData;
+		}
+			   
+		//header('Content-Type: application/json');
+		//echo json_encode($response);
+		return $response;
+		
+	}
+	
+	
 	// Response helper function
 	function CreateResponse($status,$message) {
 		$response = array(
@@ -57,7 +72,7 @@ class Zones extends Database {
 		);
 		return $response;
 	}
-	
+		
 }
 
 

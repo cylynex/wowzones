@@ -10,5 +10,4 @@ include("classes/Database.php");
 include("classes/Zones.php");
 include("classes/Rewrite.php");
 
-
 ?>

@@ -52,17 +52,5 @@ else if ($url1 == "Zone") {
 else if ($url1 == "LevelRange") {
 	$zones->ShowZonesByLevelRange($url2,$url3);
 }
-	
-
-/*
-if (!$url1) { include("pages/home.php"); }
-if ($url1 == "Login") { include("pages/login.php"); }
-if ($url1 == "AddExercise") { include("pages/addexercise.php"); }
-if ($url1 == "ViewExercises") { include("pages/viewexercises.php"); }
-if ($url1 == "Users") { include ("pages/users.php"); }
-if ($url1 == "Home") { include ("pages/home.php"); }
-if ($url1 == "Routines") { include ("pages/routines.php"); }
-if ($url1 == "Workout") { include ("pages/workout.php"); }
-*/
 
 ?>
