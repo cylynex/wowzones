@@ -2,6 +2,14 @@
 include("includes/initialize.php"); 
 ?>
 
+<div>
+Endpoints:<br>
+/Continent/ - Shows all continents <br>
+/Continent/{ContinentName}/ - Shows all Zones on that Continent <br>
+/Continent/{ContinentName}/{ZoneName}/ - Shows data about that zone<br>
+	
+</div>
+
 <form method="post" action="">
 
 	<b>Continent</b><br>

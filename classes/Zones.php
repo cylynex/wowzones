@@ -19,6 +19,19 @@ class Zones extends Database {
 	}
 	
 	
+	// Show all Continents.
+	function ShowAllContinents() {
+		$result = $this->Query("SELECT DISTINCT zoneContinent FROM zones ORDER BY zoneContinent");
+		while ($continentData = mysqli_fetch_array($result)) {
+			$response[] = $continentData;
+		}
+		
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		
+	}
+	
+	
 	// Show zone data.  Takes zone name (encoded).
 	function ShowZoneData($zone) {
 		$thisContinent = urldecode($continent);

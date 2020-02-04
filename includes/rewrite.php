@@ -42,8 +42,11 @@ if ($url1 == "Continent") {
 	if ($url3) {
 		$zones->ShowZoneData($url3);
 	} else if ($url2) {
-		$zones->ShowAllByContinent($url2); }	
+		$zones->ShowAllByContinent($url2); 	
+	} else {
+		$zones->ShowAllContinents();
 	}
+}
 
 else if ($url1 == "Zone") {
 	$zones->ShowZoneData($url2);

@@ -6,8 +6,9 @@ function SetContinent() {
 		data: {},
 		type: 'POST',
 		success: function(output) {
-			alert(output);
-			$('#outputArea').html(output);			
+			var returnedData = JSON.parse(output);
+			$('#outputArea').html(output);
 		}			
 	});
+	
 }
