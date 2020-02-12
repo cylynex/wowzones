@@ -7,6 +7,7 @@ Endpoints:<br>
 /Continent/ - Shows all continents <br>
 /Continent/{ContinentName}/ - Shows all Zones on that Continent <br>
 /Continent/{ContinentName}/{ZoneName}/ - Shows data about that zone<br>
+<br>
 	
 </div>
 
@@ -24,6 +25,8 @@ Endpoints:<br>
 
 		?>
 	</select>
+	
+	<input type="submit" value="Go">
 
 </form>
 

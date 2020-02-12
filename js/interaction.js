@@ -7,6 +7,7 @@ function SetContinent() {
 		type: 'POST',
 		success: function(output) {
 			var returnedData = JSON.parse(output);
+			console.log(returnedData);
 			$('#outputArea').html(output);
 		}			
 	});
